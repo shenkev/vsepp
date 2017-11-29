@@ -186,6 +186,8 @@ class EncoderText(nn.Module):
         """
         # Embed word ids to vectors
         x = self.embed(x)
+        if len(x.size()) is 2:
+            x = x.unsqueeze(0)
         packed = pack_padded_sequence(x, lengths, batch_first=True)
 
         # Forward propagate RNN

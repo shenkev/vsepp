@@ -7,6 +7,6 @@
 *.ipynb
 .idea/
 /runs
-test.py
 /vocab
-
+/out
+*.html
