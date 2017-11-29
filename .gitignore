@@ -1,0 +1,11 @@
+*.pyc
+*.swp
+*.ipynb_checkpoints
+*.json
+*.pth.tar
+/data
+*.ipynb
+.idea/
+/runs
+test.py
+/vocab
